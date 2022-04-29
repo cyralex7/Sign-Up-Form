@@ -1,13 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: normal;
+    font-family: 'Roboto';
     --default-green: #446A46;
 }
 
 body {
     margin: 0;
-    padding: 0;
     color: var(--default-green);
+}
+
+.main-container {
+    display:flex;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Left Side */
+
+.picture {
+    background-image: url(./images/background-img.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 30vh;
+    gap: 1vw;
+    padding: 15px 25px;
+}
+
+.logo-header {
+    flex: 1;
+}
+
+.odin-logo {
+    height: auto;
+    width: 100px;
+}
+
+/*Right Side */
+
+.right {
+    background:rgb(12, 15, 13);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.form-heading {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.heading {
+    text-align: left;
+}
+
+.form {
+    display:flex;
+    background:rgb(12, 15, 13, 0.7);
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    font-size: .8rem;
+    text-transform: uppercase;
+    gap: 2px;
+}
+
+input {
+    border: 1px solid rgb(18, 82, 39);
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(14, 134, 189);
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color:#118291
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.9);
+    cursor: pointer;
 }

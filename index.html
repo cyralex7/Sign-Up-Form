@@ -9,6 +9,50 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.<br>You know you want to.</p>
+    <div class="main-container">
+        <div class="picture">
+            <div class="logo">
+                <img src="images/logo.png" class="odin-logo" alt="odin-logo">
+                <h1 class="logo-header">The Odin Project</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="heading">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up now to get started.<br><br>You know you want to.</p>
+            </div>
+            
+            <form action="#">
+                <p class="form-heading">Let's do this!</p>
+                <div class="form">
+                    <div class="input">
+                        <label for="first-name">First Name </label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input">
+                        <label for="last-name">Last Name </label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <div class="input">
+                        <label for="user-email">Email </label>
+                        <input type="email" id="user-email" name="email" placeholder="user@example.com">
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">Phone Number </label>
+                        <input type="text" id="phone-number" name="phone-number" placeholder="ex. 555-255-1569">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password </label>
+                        <input type="password" id="user-password" name="password">
+                    </div>
+                    <div class="input">
+                        <label for="password-confirm">Confirm Password </label>
+                        <input type="password" id="user-password-confirm" name="password">
+                    </div>
+                </div>
+                <div class="form button"><button type="submit">Create Account</button></div>
+            </form>
+            <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
+        </div>
+    </div>
 </body>
 </html>
